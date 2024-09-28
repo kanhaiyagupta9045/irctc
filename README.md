@@ -41,7 +41,7 @@ http://localhost:3000
 }
 ```
 
-### 2. User Signin
+### 2. User Sign-In
 
 **Endpoint:** `POST {{baseurl}}/user/signin`  
 
