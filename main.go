@@ -25,5 +25,6 @@ func main() {
 
 	routes.UserRoutes(router)
 	routes.TrainRoutes(router)
+	routes.BookingRoutes(router)
 	router.Run(":3000")
 }

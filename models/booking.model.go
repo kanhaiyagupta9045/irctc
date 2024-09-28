@@ -1,6 +1,8 @@
 package models
 
-import "gorm.io/gorm"
+import (
+	"gorm.io/gorm"
+)
 
 type Train struct {
 	gorm.Model
@@ -13,8 +15,8 @@ type Train struct {
 
 type Booking struct {
 	gorm.Model
-	UserID     uint   `gorm:"not null" json:"user_id"`
-	TrainID    uint   `gorm:"not null" json:"train_id"`
+	UserID     uint32 `gorm:"not null" json:"user_id"`
+	TrainID    string `gorm:"not null" json:"train_id"`
 	Status     string `gorm:"not null" json:"status"`
 	SeatNumber int    `gorm:"not null" json:"seat_number"`
 }

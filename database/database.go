@@ -29,7 +29,7 @@ func InitDatabase() {
 		panic("Failed to connect to the database!")
 	}
 
-	err = db.AutoMigrate(&models.User{}, &models.Train{})
+	err = db.AutoMigrate(&models.User{}, &models.Train{}, &models.Booking{})
 	if err != nil {
 		panic("Failed to run migrations!")
 	}
