@@ -65,7 +65,7 @@ http://localhost:3000
 
 ### 3. ADD Train (User should be ADMIN)
 
-**Endpoint:** `POST{{baseurl}}/user/signup`  
+**Endpoint:** `POST{{baseurl}}/add/train`  
 
 **Request Body:**
 ```json
@@ -83,6 +83,31 @@ http://localhost:3000
 ```json
 {
   "message": "Train added successfully"
+}
+```
+
+
+### 3. Book Train Ticket 
+
+**Endpoint:** `POST{{baseurl}}/book/seat`  
+
+**Request Body:**
+```json
+
+{
+  "train_id" : "12346"
+}
+```
+
+**Response Body:**
+```json
+{
+  "booking": {
+    "train_number": "12346",
+    "status": "booked",
+    "SeatNumber": 5
+  },
+  "message": "Train booked successfully"
 }
 ```
 
