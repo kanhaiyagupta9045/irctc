@@ -63,5 +63,29 @@ http://localhost:3000
 ```
 
 
+### 3. ADD Train
+
+**Endpoint:** `POST{{baseurl}}/user/signup`  
+
+**Request Body:**
+```json
+
+  {
+  "train_number": "12346",
+  "source": "Mumbai",
+  "destination": "Delhi",
+  "total_seats": 100,
+  "available_seats": 100
+}
+```
+
+**Response Body:**
+```json
+{
+  "message": "Train added successfully"
+}
+```
+
+
 
 
