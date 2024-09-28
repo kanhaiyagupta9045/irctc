@@ -68,7 +68,13 @@ func BookSeat() gin.HandlerFunc {
 			return
 		}
 
-		c.JSON(http.StatusOK, gin.H{"message": "Train booked successfully", "booking": booking})
+		bookingstatus := models.BookingStatus{
+			TrainNumber: booking.TrainID,
+			Status:      booking.Status,
+			SeatNumber:  booking.SeatNumber,
+		}
+
+		c.JSON(http.StatusOK, gin.H{"message": "Train booked successfully", "booking": bookingstatus})
 	}
 }
 

@@ -20,3 +20,9 @@ type Booking struct {
 	Status     string `gorm:"not null" json:"status"`
 	SeatNumber int    `gorm:"not null" json:"seat_number"`
 }
+
+type BookingStatus struct {
+	TrainNumber string `json:"train_number"`
+	Status      string `json:"status"`
+	SeatNumber  int    `json:"seat_number`
+}
