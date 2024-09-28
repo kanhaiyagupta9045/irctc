@@ -43,3 +43,4 @@ http://localhost:3000
   "email": "john@example.com",
   "password": "securePassword123"
 }
+```
