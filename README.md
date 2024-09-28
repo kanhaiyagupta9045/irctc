@@ -139,7 +139,7 @@ http://localhost:3000
 
 ### 6. Booking Details 
 
-**Endpoint:** `GET{{baseurl}}/add/train`  
+**Endpoint:** `GET{{baseurl}}/booking/details`  
 
 **Request Body:**
 ```json
