@@ -134,5 +134,36 @@ http://localhost:3000
 ```
 
 
+### 6. Booking Details 
+
+**Endpoint:** `GET{{baseurl}}/add/train`  
+
+**Request Body:**
+```json
+
+  {
+  "Authorization" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImthbmhhaXlhcmF1bml5YXI5MDQ1QGdtYWlsLmNvbSIsImV4cCI6MTcyNzU3OTIzNn0.x1ntuBZd7xqPEfuoWJcWghA36hJvlqOfH2yjelRTHfk"
+}
+```
+
+**Response Body:**
+```json
+{
+  "bookings": [
+    {
+      "ID": 4,
+      "CreatedAt": "2024-09-28T10:25:30.940654+05:30",
+      "UpdatedAt": "2024-09-28T10:25:30.941439+05:30",
+      "DeletedAt": null,
+      "user_id": 1,
+      "train_id": "12346",
+      "status": "booked",
+      "seat_number": 4
+    }
+  ]
+}
+```
+
+
 
 
