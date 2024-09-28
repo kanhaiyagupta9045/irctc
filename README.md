@@ -9,6 +9,8 @@ This API provides a platform for users to check train availability, book seats, 
 - [Base URL](#base-url)
 - [Authentication](#authentication)
 - [Endpoints](#endpoints)
+  - [User Sign-Up](#user-sign-up)
+  - [User Sign-In](#user-sign-in)
   - [Add Train](#add-train)
   - [Get Seat Availability](#get-seat-availability)
   - [Book Seat](#book-seat)
@@ -17,35 +19,16 @@ This API provides a platform for users to check train availability, book seats, 
 - [Running the API](#running-the-api)
 
 ## Base URL
-http://localhost:3000
+[text](http://localhost:3000)
 
+### 1. User Sign-Up
 
-## Authentication
-
-All endpoints require a valid JWT token for authentication. You can obtain the token by logging in as a user.
-
-## Endpoints
-
-### 1. Add Train
-
-**Endpoint:** `POST /add/train`  
-**Authorization:** Admin required  
+**Endpoint:** `POST /signup`  
 
 **Request Body:**
 ```json
 {
-  "train_number": "12345",
-  "source": "Mumbai",
-  "destination": "Delhi",
-  "total_seats": 100,
-  "available_seats": 100
+  "username": "john_doe",
+  "email": "john@example.com",
+  "password": "securePassword123"
 }
-```
-** Response:**
-```json
-
-{
-  "message": "Train added successfully"
-}
-```
-
