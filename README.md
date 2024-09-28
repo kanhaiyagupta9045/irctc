@@ -96,6 +96,9 @@ http://localhost:3000
 
 {
   "train_id" : "12346"
+ "Authorization" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImthbmhhaXlhcmF1bml5YXI5MDQ1QGdtYWlsLmNvbSIsImV4cCI6MTcyNzU3OTIzNn0.x1ntuBZd7xqPEfuoWJcWghA36hJvlqOfH2yjelRTHfk"
+}
+
 }
 ```
 
