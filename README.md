@@ -63,7 +63,7 @@ http://localhost:3000
 ```
 
 
-### 3. ADD Train
+### 3. ADD Train (User should be ADMIN)
 
 **Endpoint:** `POST{{baseurl}}/user/signup`  
 
