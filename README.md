@@ -23,7 +23,7 @@ http://localhost:3000
 
 ### 1. User Sign-Up
 
-**Endpoint:** `POST user/signup`  
+**Endpoint:** `POST{{baseurl}}/user/signup`  
 
 **Request Body:**
 ```json
@@ -32,6 +32,36 @@ http://localhost:3000
   "email": "john@example.com",
   "password": "securePassword123"
 }
-
-
 ```
+
+**Response Body:**
+```json
+{
+  "message": "User registered successfully"
+}
+```
+
+### 2. User Signin
+
+**Endpoint:** `POST {{baseurl}}/user/signin`  
+
+**Request Body:**
+```json
+{
+  "email":"kanhaiya@gmail.com",
+  "password":"********",
+  "username":"kanhaiyagupta9045",
+  "usertype" :"ADMIN"
+}
+```
+
+**Response Body:**
+```json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImthbmhhaXlhcmF1bml5YXJAZ21haWwuY29tIiwiZXhwIjoxNzI3NTg4MTE2fQ.uBoGPnJyZfOhdvf1irqyG6G9GXRxaJaSBH7L3V07YEc"
+}
+```
+
+
+
+
