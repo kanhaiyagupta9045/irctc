@@ -41,3 +41,11 @@ All endpoints require a valid JWT token for authentication. You can obtain the t
   "available_seats": 100
 }
 ```
+** Response:**
+```json
+
+{
+  "message": "Train added successfully"
+}
+```
+
