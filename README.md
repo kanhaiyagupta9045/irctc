@@ -33,14 +33,5 @@ http://localhost:3000
   "password": "securePassword123"
 }
 
-### 2. User Sign-In
 
-**Endpoint:** `POST user/signin`  
-
-**Request Body:**
-```json
-{
-  "email": "john@example.com",
-  "password": "securePassword123"
-}
 ```
