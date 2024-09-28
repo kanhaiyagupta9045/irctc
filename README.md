@@ -19,7 +19,7 @@ This API provides a platform for users to check train availability, book seats, 
 - [Running the API](#running-the-api)
 
 ## Base URL
-[text](http://localhost:3000)
+http://localhost:3000
 
 ### 1. User Sign-Up
 
