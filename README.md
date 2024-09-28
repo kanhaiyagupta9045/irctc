@@ -87,7 +87,7 @@ http://localhost:3000
 ```
 
 
-### 3. Book Train Ticket 
+### 4. Book Train Ticket 
 
 **Endpoint:** `POST{{baseurl}}/book/seat`  
 
@@ -109,6 +109,28 @@ http://localhost:3000
   },
   "message": "Train booked successfully"
 }
+```
+
+### 5. GET Train Ticket Availabilty
+
+**Endpoint:** `GET{{baseurl}}seat-availability?src=Mumbai&dst=Delhi`  
+
+
+**Response Body:**
+```json
+[
+  {
+    "ID": 1,
+    "CreatedAt": "2024-09-28T10:21:42.462942+05:30",
+    "UpdatedAt": "2024-09-28T10:25:30.940654+05:30",
+    "DeletedAt": null,
+    "train_number": "12346",
+    "source": "Mumbai",
+    "destination": "Delhi",
+    "total_seats": 100,
+    "available_seats": 96
+  }
+]
 ```
 
 
