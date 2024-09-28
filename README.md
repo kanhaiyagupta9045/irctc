@@ -23,12 +23,23 @@ http://localhost:3000
 
 ### 1. User Sign-Up
 
-**Endpoint:** `POST /signup`  
+**Endpoint:** `POST user/signup`  
 
 **Request Body:**
 ```json
 {
   "username": "john_doe",
+  "email": "john@example.com",
+  "password": "securePassword123"
+}
+
+### 2. User Sign-In
+
+**Endpoint:** `POST user/signin`  
+
+**Request Body:**
+```json
+{
   "email": "john@example.com",
   "password": "securePassword123"
 }
