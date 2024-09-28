@@ -17,4 +17,35 @@ This API provides a platform for users to check train availability, book seats, 
 - [Running the API](#running-the-api)
 
 ## Base URL
+http://localhost:3000
+
+
+## Authentication
+
+All endpoints require a valid JWT token for authentication. You can obtain the token by logging in as a user.
+
+## Endpoints
+
+### 1. Add Train
+
+**Endpoint:** `POST /add/train`  
+**Authorization:** Admin required  
+
+**Request Body:**
+```json
+{
+  "train_number": "12345",
+  "source": "Mumbai",
+  "destination": "Delhi",
+  "total_seats": 100,
+  "available_seats": 100
+}
+```
+** Response:**
+```json
+
+{
+  "message": "Train added successfully"
+}
+```
 

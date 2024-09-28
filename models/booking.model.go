@@ -24,5 +24,5 @@ type Booking struct {
 type BookingStatus struct {
 	TrainNumber string `json:"train_number"`
 	Status      string `json:"status"`
-	SeatNumber  int    `json:"seat_number`
+	SeatNumber  int    `json:"seat_number"`
 }
